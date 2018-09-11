@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 
 Vue.filter('currency', function (value) {
   if(value > 0)
@@ -10,5 +11,6 @@ Vue.filter('currency', function (value) {
 Vue.config.productionTip = false
 
 new Vue({
+  router,
   render: h => h(App)
 }).$mount('#app')
