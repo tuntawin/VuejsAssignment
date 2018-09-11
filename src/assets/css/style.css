@@ -1,0 +1,27 @@
+.blink_me {
+    animation: blinker 1s linear 3;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  /*Specific Cases*/
+
+.btn.btn-custom-lg,
+.btn.btn-custom-sm,
+.btn.btn-custom-xs {
+  border-radius: 0;
+}
+/*Global*/
+
+.btn {
+  border-radius: 0;
+}
+
+.badge {
+  border-radius: 0.05;
+}
