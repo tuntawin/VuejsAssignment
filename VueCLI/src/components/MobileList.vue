@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import Vue from 'vue'
 export default {
     name : "mobile-list",
     props:['mobile', 'index'],
@@ -50,7 +51,7 @@ export default {
     },
     computed: {
         displayPrice: function () {
-            var price = this.mobile.price//Vue.filter("currency")(this.mobile.price)
+            var price = Vue.filter("currency")(this.mobile.price)
             var classPrice = 'success blink_me'
             if (this.mobile.nocounter > this.mobile.yescounter) {
                 classPrice = 'danger'

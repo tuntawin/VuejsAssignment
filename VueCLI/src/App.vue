@@ -42,12 +42,12 @@
 <script>
 import AddBrand from './components/AddBrand'
 import BrandList from './components/BrandList'
+
 import HuaweiP20 from './assets/Images/huawei-p20-pro.png'
 import Mate10 from './assets/Images/mate10.png'
 import Nova3i from './assets/Images/nova3i.png'
 import IPhoneX from './assets/Images/iPhone-X.png'
 import Iphone8 from './assets/Images/iphone8.png'
-
 
 export default {
   name: 'app',
