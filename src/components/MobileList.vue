@@ -12,8 +12,8 @@
                         <button type="button" v-on:click="deleteMobile()" class="btn badge badge-danger">X</button>
                     </div>
                 </div>
-                <img class="card-img-top" src="../assets/Images/huawei-p20-pro.png" style="padding: 10px;">
-                <img class="card-img-top" :src="imagePath" style="padding: 10px;">
+                <!-- <img class="card-img-top" src="../assets/Images/huawei-p20-pro.png" style="padding: 10px;"> -->
+                <img class="card-img-top" :src="mobile.picture" style="padding: 10px;">
                 <div class="card-body">
                     <p class="card-text">{{mobile.description}}</p>
                 </div>
@@ -67,7 +67,6 @@ export default {
         },
         imagePath: function(){
             var path = '../assets/Images/huawei-p20-pro.png'//this.mobile.picture
-            console.log(path)
             return '/img/' + this.mobile.picture
         }
     }

@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 import AddMobile from '@/components/AddMobile'
 import MobileList from "@/components/MobileList";
 
@@ -60,19 +62,19 @@ export default {
             this.brand.mobiles.splice(mindex,1)
         },
         getAnswer(mobile) {
-            // axios.get('https://yesno.wtf/api')
-            //     .then(function (response) {
-            //         if("yes" === response.data.answer)
-            //         {
-            //             mobile.yescounter++;
-            //         }else{
-            //             mobile.nocounter++;
-            //         }
+            axios.get('https://yesno.wtf/api')
+                .then(function (response) {
+                    if("yes" === response.data.answer)
+                    {
+                        mobile.yescounter++;
+                    }else{
+                        mobile.nocounter++;
+                    }
 
-            //     })
-            //     .catch(function (error) {
+                })
+                .catch(function (error) {
                     
-            //     })
+                })
         },
         resetIsNew(){
             this.brand.mobiles.forEach(function(part, index, theArray) {

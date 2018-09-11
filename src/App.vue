@@ -42,6 +42,12 @@
 <script>
 import AddBrand from './components/AddBrand'
 import BrandList from './components/BrandList'
+import HuaweiP20 from './assets/Images/huawei-p20-pro.png'
+import Mate10 from './assets/Images/mate10.png'
+import Nova3i from './assets/Images/nova3i.png'
+import IPhoneX from './assets/Images/iPhone-X.png'
+import Iphone8 from './assets/Images/iphone8.png'
+
 
 export default {
   name: 'app',
@@ -62,7 +68,7 @@ export default {
                     name: 'P20 Pro',
                     description: "กล้องเทพ",
                     price: 20000,
-                    picture : 'huawei-p20-pro.png',
+                    picture : HuaweiP20,
                     yescounter: 0,
                     nocounter: 0,
                     isNew: false
@@ -71,7 +77,7 @@ export default {
                     name: 'Mate 10',
                     description: "เครื่องดีดี",
                     price: 24000,
-                    picture : 'Images/mate10.png',
+                    picture : Mate10,
                     yescounter: 0,
                     nocounter: 0,
                     isNew: false
@@ -80,7 +86,7 @@ export default {
                     name: 'NOVA 3i',
                     description: "4 กล้องเทพ",
                     price: 9990,
-                    picture : 'Images/nova3i.png',
+                    picture : Nova3i,
                     yescounter: 0,
                     nocounter: 0,
                     isNew: false
@@ -89,13 +95,13 @@ export default {
         },
         {
             brandName: 'Apple',
-             isOpen : false,
+            isOpen : false,
             mobiles: [
                 {
                     name: 'Iphone X',
                     description: "สวัสดีอนาคต",
                     price: 20000,
-                    picture : 'Images/iPhone-X.png',
+                    picture : IPhoneX,
                     yescounter: 0,
                     nocounter: 0,
                     isNew: false
@@ -104,7 +110,7 @@ export default {
                     name: 'Iphone 8',
                     description: "ความสวยในความฉลาด",
                     price: 24000,
-                    picture : 'Images/iphone8.png',
+                    picture : Iphone8,
                     yescounter: 0,
                     nocounter: 0,
                     isNew: false
