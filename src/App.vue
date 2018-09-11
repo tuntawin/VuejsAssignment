@@ -122,7 +122,6 @@ export default {
   methods:{
     openCreateNewBrand: function () {
         this.isAdd = !this.isAdd
-        console.log(this.isAdd)
     },
     addBrand(brandName){
         this.isAdd = !this.isAdd
